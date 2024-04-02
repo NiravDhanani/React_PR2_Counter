@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.couterApp{
+    background: linear-gradient(0deg, rgba(34,136,195,1) 38%, rgba(212,222,80,1) 100%);
+    height:  100vh;
+}
+.box {
+    width: 100px;
+    text-align: center;
+}
+
+button{
+    padding:  0px 15px;
+    margin: 0;
+    font-size: 25px;
+    border-radius: 7px;
+    color: white;
+    background-color: green;
+}
