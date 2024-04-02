@@ -1,25 +1,23 @@
-import React from "react"
+import React from "react";
 import { useState } from "react";
-import  './counter.css'
+import "./counter.css";
 
-export const Counter = () =>{
-    const [cnt, setCnt] = useState(0)
+export const Counter = () => {
+  const [cnt, setCnt] = useState(0);
 
-
-
- return (
-   <section className="couterApp couterApp d-flex justify-content-center align-items-center">
-     <div className="container ">
-        <div>
+  return (
+    <section className="couterApp couterApp d-flex justify-content-center align-items-center">
+      <div className="container ">
         <h1 className="text-center">Counter App</h1>
-           <div className="justify-content-center d-flex m-5">
-           {<button onClick={()=> cnt>0 ? setCnt(cnt-1) : setCnt(0)}> - </button>}
-           <h2 className="box ">{cnt}</h2>
-           <button onClick={()=> setCnt(cnt+1)}> + </button>
-           </div>
+        <div className="justify-content-center d-flex m-5">
+          <button onClick={() => (cnt > 0 ? setCnt(cnt - 1) : setCnt(0))}>-</button>
+          <h2 className="box ">{cnt}</h2>
+          <button onClick={() => setCnt(cnt + 1)}> + </button>
         </div>
-    </div>
-   </section>
- )
-}
-
+        <div className="d-flex justify-content-center">
+          <button onClick={()=> setCnt(0)}>Reset</button>
+        </div>
+      </div>
+    </section>
+  );
+};
